@@ -1,4 +1,4 @@
-package state
+package citiesbystate
 
 type City struct {
 	CountyName        string  `xml:"county_name"`

@@ -1,4 +1,4 @@
-package state
+package citiesbystate
 
 import (
 	"code.google.com/p/go.net/context"
