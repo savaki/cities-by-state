@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	cityService := state.New()
+	cityService := citiesbystate.New()
 	cities, _ := cityService.ByState("California")
 	json.NewEncoder(os.Stdout).Encode(cities)
 }
@@ -42,7 +42,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 5 * time.Second)
 	defer cancel()
 
-	cities, _ := state.WithContext(ctx).ByState("CA"))
+	cities, _ := citiesbystate.WithContext(ctx).ByState("CA"))
 	json.NewEncoder(os.Stdout).Encode(cities)
 }
 ```
